@@ -1,24 +1,25 @@
+//wap to create calculator using constructor.
 #include<iostream>
 using namespace std;
 class Student{
     private:
-string name;
+int a,b;
 public:
-Student(){
-cout<<"default constructor"<<endl;
-name="Unknown";
+Student(int num1,int num2){
+a=num1;
+b=num2;
+cout<<"add: "<<a+b<<endl;
+     cout<<"sub: "<<a-b<<endl;
+      cout<<"mul: "<<a*b<<endl;
+       cout<<"div: "<<(float)a/b<<endl;
 }
-Student(string name_pass){
-    cout<<"parameter constructor"<<endl;
-name=name_pass;
-}
-void display(){
-    cout<<"name: "<<name<<endl;
-}
+
+// void calc(){
+    
+// }
 };
 int main(){
-Student s;
-s.display();
-Student cp("ashwini");
-cp.display();
+Student s(10,20);
+//s.calc();
+
 }
