@@ -32,12 +32,20 @@ void class_B_func(){
     cout<<"i am in clas B"<<endl;
 }
 };
-
+class C:public A{
+    public:
+    void class_C_func(){
+    cout<<"i am in clas C"<<endl;
+}
+};
 
 int main(){
-
-B b;
-b.set_name("arpit");
+C b;
+B a;
+a.set_name("zaid");
+a.get_name();
+a.class_B_func();
+b.set_name("namrata");
 b.get_name();
-b.class_B_func();
+b.class_C_func();
 }

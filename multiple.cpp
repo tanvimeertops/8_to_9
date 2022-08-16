@@ -26,18 +26,23 @@ void get_name(){
 }
 
 };
-class B:public A{
+class B{
 public:
 void class_B_func(){
     cout<<"i am in clas B"<<endl;
 }
 };
-
+class C:public B,public A{
+    public:
+    void class_C_func(){
+    cout<<"i am in clas C"<<endl;
+}
+};
 
 int main(){
-
-B b;
-b.set_name("arpit");
+C b;
+b.set_name("nikhil");
 b.get_name();
 b.class_B_func();
+b.class_C_func();
 }

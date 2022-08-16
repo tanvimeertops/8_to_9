@@ -31,13 +31,30 @@ public:
 void class_B_func(){
     cout<<"i am in clas B"<<endl;
 }
+
 };
-
-
+class C:public A{
+    public:
+    void class_C_func(){
+    cout<<"i am in clas C"<<endl;
+    
+}
+};
+class D:public B,public C{
+public:
+    void class_D_func(){
+    cout<<"i am in clas D"<<endl;
+    }
+};
 int main(){
-
+D d;
+d.class_B_func();
+d.class_C_func();
+d.class_D_func();
 B b;
 b.set_name("arpit");
 b.get_name();
-b.class_B_func();
+C c;
+c.set_name("pooja");
+c.get_name();
 }
