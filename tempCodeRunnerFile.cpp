@@ -1,1 +1,1 @@
-class_C_func
+A
