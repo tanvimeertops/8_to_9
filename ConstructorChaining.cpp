@@ -4,7 +4,8 @@ and return type.
 function/method over riding: when there is same function prototype
  in both base and derived class and the object of derived class calls
  the function then only the derived class function will be called.
- so we can say that the function of derived class overrides the function of 
+ so we can say that the function of derived class overrides the
+ 2 function of 
  base class.
  polymorphism: aquirring more than one form.(changing forms)
  runtime polymorphism: function over ridding.
