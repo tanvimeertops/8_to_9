@@ -29,19 +29,22 @@ A(int x=0,int y=0){a=x;b=y;}
 void sum(){
     cout<<a<<"+"<<b<<endl;
 }
-A operator+(A p){
+A operator-(A p){ //p->points 2nd opearand.
 A temp;
-temp.a=a+p.a; //(a=100+p.a=3)
-temp.b=b+p.b; //(b=7+p.b=5)
-//cout<<p.b;
+temp.a=a-p.a; //(a=3-p.a=100)
+temp.b=b-p.b; //(b=5+p.b=7)
+cout<<p.a;
 return temp;
 }
 
 };
 int main(){
     A a(100,7); 
+    //a(100,7)
     A b(3,5);
-    A c=a+b; //c=add.a(b)
+    A c=b-a; 
+    //100-7
+
     c.sum();
 
 }
