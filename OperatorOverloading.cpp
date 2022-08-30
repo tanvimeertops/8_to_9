@@ -15,7 +15,7 @@ operator overloading
 different datatype(objects:user defined datatype) 
 then it is called as operator overloading.
 almost all the operator can be overloaded.
-except ::,.,?:,sizeOf()
+except ::,.,?:,sizeOf(),pointer operator(*).
 */
 /*int - primitive data type.
 object -user defined datatype*/
@@ -23,26 +23,24 @@ object -user defined datatype*/
 using namespace std;
 class A{
 private:
-int a,b;
+int num1,num2;
 public:
-A(int x=0,int y=0){a=x;b=y;}
+A(int x=0,int y=0){num1=x;num2=y;}
 void sum(){
-    cout<<a<<"+"<<b<<endl;
+    cout<<num1<<"-"<<num2<<endl;
 }
 A operator-(A p){ //p->points 2nd opearand.
 A temp;
-temp.a=a-p.a; //(a=3-p.a=100)
-temp.b=b-p.b; //(b=5+p.b=7)
-cout<<p.a;
+temp.num1=p.num2-num2;//5-7
+temp.num2=num1+p.num1;//100+3
+//cout<<p.num1;
 return temp;
-}
-
-};
+}};
 int main(){
     A a(100,7); 
     //a(100,7)
     A b(3,5);
-    A c=b-a; 
+    A c=a-b; //a.sub(b)
     //100-7
 
     c.sum();
