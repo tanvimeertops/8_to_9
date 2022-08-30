@@ -24,4 +24,5 @@ int main(){
     A b(4,5);
     A c=a/b; //c= a.div(b)
     c.divi();
+    
 }
