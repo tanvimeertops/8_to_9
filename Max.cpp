@@ -1,5 +1,5 @@
-/*Write a program to find the max number from given two numbers using 
-friend function 
+/*Write a program to find the max number from given two numbers using
+ friend function 
 value 1: 2   value 2: 6
 max:6
 */
