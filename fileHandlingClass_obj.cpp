@@ -29,8 +29,7 @@ cout<<endl<<"data written succesful";//write multiple line
 
 wrrite_data.close();//close the file
     }
-
-
+    
     void read_data(){
         cout<<endl<<"read from the file started"<<endl;
 string data1;
@@ -47,16 +46,10 @@ cout<<"data read succuessful";
 
 read_file.close();//close the file
     }
-
 };
 
 int main(){
-
 A a;
 a.write_data();
 a.read_data();
-
-
-
-
 }
